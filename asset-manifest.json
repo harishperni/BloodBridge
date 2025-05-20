@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/BloodBridge/static/css/main.f6ca1bc4.css",
+    "main.js": "/BloodBridge/static/js/main.ffd0cdf6.js",
+    "static/js/453.b6c9a053.chunk.js": "/BloodBridge/static/js/453.b6c9a053.chunk.js",
+    "index.html": "/BloodBridge/index.html",
+    "main.f6ca1bc4.css.map": "/BloodBridge/static/css/main.f6ca1bc4.css.map",
+    "main.ffd0cdf6.js.map": "/BloodBridge/static/js/main.ffd0cdf6.js.map",
+    "453.b6c9a053.chunk.js.map": "/BloodBridge/static/js/453.b6c9a053.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6ca1bc4.css",
+    "static/js/main.ffd0cdf6.js"
+  ]
+}
