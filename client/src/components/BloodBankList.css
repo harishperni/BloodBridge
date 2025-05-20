@@ -1,0 +1,141 @@
+.blood-bank-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.filters {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.blood-type-select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  min-width: 200px;
+}
+
+.blood-bank-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.blood-bank-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.blood-bank-card:hover {
+  transform: translateY(-5px);
+}
+
+.blood-bank-card h3 {
+  color: #e63946;
+  margin-bottom: 10px;
+}
+
+.address {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.hours {
+  color: #2a9d8f;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.contact-info {
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.blood-types {
+  margin-top: 15px;
+}
+
+.blood-types h4 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.blood-type-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.blood-type {
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.blood-type.available {
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+
+.blood-type.available .quantity:empty,
+.blood-type.available .quantity:contains("0") {
+  color: #721c24;
+  font-weight: bold;
+}
+
+.blood-type.available[data-has-zero="true"] {
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+.blood-type.available[data-has-zero="true"] .quantity {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.blood-type.unavailable {
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+}
+
+.type {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.quantity {
+  font-size: 0.9em;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2em;
+  color: #666;
+  margin: 50px 0;
+}
+
+.error {
+  text-align: center;
+  color: #dc3545;
+  margin: 50px 0;
+  padding: 20px;
+  background: #f8d7da;
+  border-radius: 5px;
+} 

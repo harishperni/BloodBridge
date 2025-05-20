@@ -1,0 +1,88 @@
+.blood-type-checker {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blood-type-checker h2 {
+  color: #e63946;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.checker-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.type-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.type-selector label {
+  font-weight: 500;
+  color: #333;
+}
+
+.blood-type-select {
+  padding: 10px;
+  border: 2px solid #e63946;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  background-color: white;
+}
+
+.check-button {
+  padding: 12px;
+  background-color: #e63946;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.check-button:hover:not(:disabled) {
+  background-color: #c1121f;
+}
+
+.check-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.result.compatible {
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+}
+
+.result.incompatible {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+}
+
+.result h3 {
+  margin: 0 0 10px 0;
+}
+
+.result p {
+  margin: 0;
+  font-size: 1.1em;
+} 
